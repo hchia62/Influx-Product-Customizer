@@ -156,7 +156,7 @@
         {%- endcase -%}
 
         {%- if option_max_selections > 0 and option_min_selections == null -%}
-          <div class="product-customizer-selections-message">Please choose up to <span>{{ option_max_selections }}</span> {{ option_max_selections | pluralize: 'option', 'options' }}</div>
+          <div class="product-customizer-selections-message"> <span>{{ option_max_selections }}</span> {{ option_max_selections | pluralize: 'option', 'options' }}</div>
         {%- elsif option_min_selections > 0 and option_max_selections == null -%}
           <div class="product-customizer-selections-message">Please choose <span>{{ option_min_selections }}</span> or more options</div>
         {%- elsif option_max_selections != null and option_max_selections == option_min_selections -%}
